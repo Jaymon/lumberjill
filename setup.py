@@ -24,10 +24,10 @@ setup(
     name=name,
     version=version,
     description='Provides additional logging filters and handlers.',
-    author='Jay Marcyes',
-    author_email='jay@marcyes.com',
+    author='Topher Fisher',
+    author_email='topher@firstopinionapp.com',
     url='http://github.com/firstopinion/{}'.format(name),
-    packages=[name, '{}.interface'.format(name)],
+    packages=[name],
     tests_require=[],
     license="MIT",
     classifiers=[ # https://pypi.python.org/pypi?:action=list_classifiers
