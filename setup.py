@@ -24,8 +24,13 @@ setup(
     name=name,
     version=version,
     description='Provides additional logging filters and handlers.',
+<<<<<<< HEAD
     author='Topher Fisher',
     author_email='topher@firstopinionapp.com',
+=======
+    author='Jay Marcyes',
+    author_email='jay@marcyes.com',
+>>>>>>> aa37f46a6e4f0335f9663307f05e471d0955a8e1
     url='http://github.com/firstopinion/{}'.format(name),
     packages=[name],
     tests_require=[],
