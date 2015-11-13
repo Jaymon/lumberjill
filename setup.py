@@ -8,7 +8,7 @@ from setuptools import setup
 import ast
 import os
 
-name = 'lumberjack'
+name = 'lumberjill'
 version = ''
 with open('{}{}__init__.py'.format(name, os.sep), 'rU') as f:
     for node in (n for n in ast.parse(f.read()).body if isinstance(n, ast.Assign)):
@@ -24,13 +24,8 @@ setup(
     name=name,
     version=version,
     description='Provides additional logging filters and handlers.',
-<<<<<<< HEAD
-    author='Topher Fisher',
+    author='Topher Fischer',
     author_email='topher@firstopinionapp.com',
-=======
-    author='Jay Marcyes',
-    author_email='jay@marcyes.com',
->>>>>>> aa37f46a6e4f0335f9663307f05e471d0955a8e1
     url='http://github.com/firstopinion/{}'.format(name),
     packages=[name],
     tests_require=[],

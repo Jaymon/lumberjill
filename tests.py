@@ -5,7 +5,7 @@ from __future__ import absolute_import
 import logging
 import unittest
 
-from lumberjack import filters
+from lumberjill import filters
 
 
 class StubFilter(object):
@@ -41,7 +41,7 @@ class StubRecord():
 class TestLoggingStuff(unittest.TestCase):
     def setUp(self):
         pass
-    
+
     def tearDown(self):
         pass
 
@@ -113,7 +113,7 @@ class TestLoggingStuff(unittest.TestCase):
         handler = StubHandler()
         handler.addFilter(filters.FrequencyFilter([ZeroDivisionError], 10))
 
-        # Generator will create 5000 records 
+        # Generator will create 5000 records
         records = (StubRecord() for t in xrange(5000))
         for record in records:
             handler.handle(record)
